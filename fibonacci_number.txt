@@ -1,0 +1,13 @@
+ 
+ Hello, bugün daha iyiyim.
+ Fibonnacci Number Cod:
+ def fibonacci(i):
+    fbn = []
+    a, b = 1, 1
+    while a < i:
+        fbn.append(a)
+        a, b = b, a + b
+    print(fbn)
+fibonacci(60)
+[1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+
