@@ -1,0 +1,23 @@
+
+  Hello;
+  Comfortable Words Codu;
+
+  o improve your knowledge of collection types (set), boolean logic and raise your awareness of "ten fingers keyboard".
+After finishing the task correctly, then submit your answer (code) as a plain text which shows you did correctly.
+Task : Find out if the given word is "comfortable words" in relation to the ten-finger keyboard use.
+A comfortable word is a word which you can type always alternating the hand you type with (assuming you type using a Q-keyboard and use of the ten-fingers standard).
+The word will always be a string consisting of only letters from a to z.
+Write a program to returns True if it's a comfortable word or False otherwise.
+
+left = {"q", "w", "e", "r", "t", "a", "s", "d", "f", "g", "z", "x", "c", "v", "b"}
+right = {"y", "u", "i", "o", "p", "h", "j", "k", "l", "n", "m"}
+
+word = "clarusway"
+set_word = set(word)
+set_word
+bool(set_word.difference(right))
+left_bool = bool(set_word.difference(left))
+right_bool = bool(set_word.difference(right))
+print(left_bool and right_bool)
+True
+
